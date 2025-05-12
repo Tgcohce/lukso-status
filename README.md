@@ -2,7 +2,8 @@
 
 A mini dApp for LUKSO's Nexus Hackathon that allows users to post and view short text updates stored directly on their Universal Profiles.
 
-![UP Micro-Blog Screenshot]()
+![UP Micro-Blog Screenshot](https://github.com/user-attachments/assets/7a6fb854-38df-49aa-bbd8-b971aec87ec0)
+
 
 ## Features
 
