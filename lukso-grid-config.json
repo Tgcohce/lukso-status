@@ -1,0 +1,29 @@
+{
+  "name": "UP Micro-Blog",
+  "description": "A mini dApp that allows users to post and view short text updates stored directly on their Universal Profiles using LSP0 ERC725Account standard",
+  "version": "0.1.0",
+  "author": "LUKSO Hackathon Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/lukso-status"
+  },
+  "homepage": "https://lukso-status.on.the.grid",
+  "grid": {
+    "category": "social",
+    "tags": ["microblog", "universal-profile", "lsp0", "erc725y", "the-grid", "lukso"],
+    "icon": "📝",
+    "screenshots": [],
+    "permissions": [
+      {
+        "feature": "Connect to your Universal Profile",
+        "reason": "Required to authenticate and post updates to your Universal Profile"
+      },
+      {
+        "feature": "Store data on your Universal Profile",
+        "reason": "Required to save your microblog posts directly on your Universal Profile using ERC725Y storage"
+      }
+    ],
+    "upProfile": "YOUR_UNIVERSAL_PROFILE_ADDRESS_HERE"
+  }
+}

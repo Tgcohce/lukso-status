@@ -1,0 +1,246 @@
+.grid-landing {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6e45e2 0%, #89d4cf 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.landing-container {
+  max-width: 1000px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.landing-header {
+  padding: 40px;
+  text-align: center;
+  background: linear-gradient(90deg, #6e45e2 0%, #89d4cf 100%);
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.logo-icon {
+  font-size: 2.5rem;
+  margin-right: 15px;
+}
+
+.landing-header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin: 10px 0 0;
+  opacity: 0.9;
+}
+
+.landing-content {
+  padding: 40px;
+}
+
+.feature-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  flex: 1;
+  min-width: 200px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  font-size: 1.3rem;
+  margin: 0 0 10px;
+  color: #6e45e2;
+}
+
+.feature p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.embed-section {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.embed-section h2 {
+  font-size: 1.8rem;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.embed-section p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.url-container {
+  display: flex;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.url-container input {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  font-size: 1rem;
+  color: #333;
+}
+
+.copy-button {
+  background: #6e45e2;
+  color: white;
+  border: none;
+  padding: 0 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.copy-button:hover {
+  background: #5a39b8;
+}
+
+.copy-button.copied {
+  background: #28a745;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.step-number {
+  width: 30px;
+  height: 30px;
+  background: #6e45e2;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.cta-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(90deg, #6e45e2 0%, #89d4cf 100%);
+  color: white;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(110, 69, 226, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(110, 69, 226, 0.6);
+}
+
+.landing-footer {
+  padding: 20px 40px;
+  background: #f8f9fa;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.landing-footer p {
+  margin: 0 0 10px;
+  color: #666;
+}
+
+.tech-stack {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tech-stack span {
+  background: #e9ecef;
+  color: #495057;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  margin: 0 5px 5px;
+}
+
+@media (max-width: 768px) {
+  .feature-section {
+    flex-direction: column;
+  }
+  
+  .feature {
+    margin-bottom: 30px;
+  }
+  
+  .url-container {
+    flex-direction: column;
+  }
+  
+  .url-container input {
+    text-align: center;
+  }
+  
+  .copy-button {
+    padding: 12px;
+  }
+}
